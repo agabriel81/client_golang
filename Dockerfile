@@ -28,4 +28,4 @@ LABEL maintainer="The Prometheus Authors <prometheus-developers@googlegroups.com
 COPY --from=builder /go/src/github.com/prometheus/client_golang/examples/random \
     /go/src/github.com/prometheus/client_golang/examples/simple ./
 EXPOSE 8080
-CMD ["echo", "Please run an example. Either /random or /simple"]
+CMD ["/random"]
